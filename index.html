@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <!-- Icon setup -->
+    <link rel="icon" href="https://images.icon-icons.com/745/PNG/512/armchair_icon-icons.com_63550.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Gasoek+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand -->
+        <a class="brand" href="">
+            <i class="fa-solid fa-archway"></i>
+            <span class="brandname">IKEA</span>
+        </a>
+        <!-- Checkbox -->
+        <input type="checkbox" id="check">
+        <!-- Label Include 2 Icons -->
+        <label for="check" class="icons">
+            <!-- Menu -->
+            <i class="fa-solid fa-bars" id="menuicon"></i>
+            <!-- Cancel -->
+            <i class="fa-solid fa-xmark" id="cancelicon"></i>
+        </label>
+        <!-- Links -->
+        <ul class="navlinks">
+            <!-- (#home, #product, #about, #contact)- Used to navigate to the sections -->
+            <li class="links"><a href="#home" class="link">Home</a></li>
+            <li class="links"><a href="#product" class="link">Products</a></li>
+            <li class="links"><a href="#about" class="link">About</a></li>
+            <li class="links"><a href="#contact" class="link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Text content -->
+        <div class="herotext">
+            <h1 id="herotitle">Welcome to IKEA</h1>
+            <p id="heropara">Discover our wide range of furniture for your living room, bedroom, and office accessories.
+            </p>
+            <button class="herobutton">Shop Now</button>
+        </div>
+        <!-- Image content -->
+        <div class="heroimage">
+            <img src="./images/Rustic Wooden Sofa with Tribal Pillows.png" alt="" id="furnitureimage">
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="product" class="product">
+        <!-- Heading -->
+        <h2 class="producthead">Our Products</h2>
+        <!-- Product Container -->
+        <div class="productcontainer">
+
+            <!-- Product Card 1 -->
+            <div class="card">
+                <!-- Product Image -->
+                <img src="./images/Elegant Interior with Wooden Table and Clay Pot.png" alt="" class="cardimg">
+                <!-- Name -->
+                <h3 class="productname">Wooden Table</h3>
+                <!-- Price -->
+                <p class="productprice">$199.99</p>
+                <!-- Button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="card">
+                <!-- Product Image -->
+                <img src="./images/Minimalist Workspace.png" alt="" class="cardimg">
+                <!-- Name -->
+                <h3 class="productname">Workspace Set</h3>
+                <!-- Price -->
+                <p class="productprice">$899.99</p>
+                <!-- Button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="card">
+                <!-- Product Image -->
+                <img src="./images/Cozy Nightstand Setup.png" alt="" class="cardimg">
+                <!-- Name -->
+                <h3 class="productname">Night Stand</h3>
+                <!-- Price -->
+                <p class="productprice">$149.99</p>
+                <!-- Button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- Banner  -->
+    <section id="about" class="banner">
+        <h2 class="abouthead">About Us</h2>
+        <p class="aboutpara">Whether you just moved into a new home or looking to revamp your current one, we at IKEA are here to inspire you with affordable home furniture solutions, there is a piece of furniture to every corner of your home. Create a home that is perfect for you.
+        When you visit IKEA store, make yourself at home in our many room settings in the store. Squeeze the upholsteries, feel the oriental rugs, try the sofa beds and open the cabinets to feel the quality. On the price tag, you’ll find all you need to know about a product, including where in the store you can pick it up.
+        </p>
+        <!-- We can give multiple buttons -->
+        <button class="herobutton aboutbutton">Let's Talk</button>
+
+    </section>
+    <!-- Footer -->
+    <section id="contact" class="contact">
+        <!-- Contact Text -->
+        <div class="contacttext">
+            <h2 class="contacthead">Contact Us</h2>
+            <h3 class="contactph">999-667-7890</h3>
+            <p class="contactmail">support@furniture.com</p>
+
+            <!-- Icons -->
+            <div class="socialicons">
+                <a class="smlink" href="https://www.facebook.com" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="smlink" href="https://www.twitter.com" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a class="smlink" href="https://www.instagram.com" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+        <!-- Subscribe -->
+        <div class="subscribe">
+            <h3 class="subscribehead">Join Our Mail List</h3>
+            <div class="box">
+                <input type="text" placeholder="Email" class="subinput">
+                <button class="subbutton">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 1999 Furniture Store. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* Used to control overlay order */
+    z-index: 1;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none; /* Hide icons on larger screens */
+}
+
+.navlinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+/* To make the menu links hover effect(color change) */
+.link:hover {
+    color: #007BFF;
+}
+.hero{
+    display: flex;
+    padding: 160px 8%;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+/* To make both sections equal in width (herotext and heroimage) */
+.herotext{
+    flex: 1;
+    animation: fadeIn 1s ease;
+}
+#herotitle {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#heropara {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.herobutton {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.herobutton:hover {
+    background-color: #002855;
+    transform: scale(1.05);
+}
+.heroimage{
+    flex: 1;
+}
+#furnitureimage {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Products */
+.product {
+    padding: 0px 8% 60px 8%;
+    text-align: center;
+}
+.producthead {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.productcontainer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.cardimg {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.productname {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.productprice {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+/* Banner */
+.banner {
+    margin: 0px 8% 60px 8%;
+    padding: 0px 40px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/Minimalist\ Interior\ with\ Modern\ Chair.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    border-radius: 15px;
+
+}
+.abouthead {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+}
+.aboutpara {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 40px;
+}
+.aboutbutton {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+.contact {
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacthead, .subscribehead {
+    font-size: 24px;
+    color: #00254c;
+    margin-bottom: 20px;
+}
+.contactph,.contactmail {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+.socialicons {
+    margin-top: 20px;
+}
+.smlink{
+    margin-right: 20px;
+    color: #333;
+}
+.box {
+    display: flex;
+}
+.subinput {
+    padding: 10px;
+    width: 300px;
+}
+.subbutton {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+.footer {
+    padding: 15px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+
+}
+
+/* To have it Smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Style for mobile and tablet */
+    .navbar {
+        padding: 20px 5%;
+    }
+    .brand,.icons {
+        font-size: 15px;
+    }
+
+    .icons {
+        display: flex;
+        /* Show icons on smaller screens */
+    }
+
+    #cancelicon {
+        display: none;
+        /* Hide cancel icon by default */
+    }
+
+    #check:checked~.icons #menuicon {
+        display: none;
+        /* Hide menu icon when checked */
+    }
+
+    #check:checked~.icons #cancelicon {
+        display: block;
+        /* Show cancel icon when checked */
+    }
+
+    .navlinks {
+        /* To Adjust the Link */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* To Blur the Background */
+        backdrop-filter: blur(10px);
+        height: 0px;
+        flex-direction: column;
+        display: none;
+        /* Hide links by default on smaller screens */
+    }
+
+    #check:checked~.navlinks {
+        display: block;
+        height: fit-content;    
+    }
+
+    .links {
+        text-align: center;
+        margin: 1.5rem 0px;
+    }
+    /* Design the Links inside menu */
+    .link {
+        font-size: 20px;
+    }   
+    /* To change the layout on smaller screens */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    #herotitle {
+        font-size: 35px;
+    }
+    .banner {
+        height: fit-content;
+        padding: 40px 8%;
+    }
+    .contact {
+        height: fit-content;
+        padding: 40px 8%;
+    }
+}
